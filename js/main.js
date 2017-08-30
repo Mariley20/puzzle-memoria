@@ -34,10 +34,20 @@ for (let i = 0; i < imagenes.length; i++) {
 let comparar = 0; // contador de click
 let nombreAnterior;
 $('.box-imagenes').on('click', (event) => {
+
+    $(this).addClass('fin');
+
     let img = event.target;
+    $(img).addClass('fin');
+    let x = $('.fin');
+    console.log(x);
+    if($('.fin').length == 2){
+
+    }
+    /*
     let indice;
     let idElement = parseInt(img.id);
-    
+
     if (img.nodeName == 'IMG') {
         if (img.alt == 'inicio') {
             for (var i = 0; i < imagenes.length; i++) {
@@ -66,5 +76,5 @@ $('.box-imagenes').on('click', (event) => {
                 idAnterior = img.id;
             }
         }
-    }
+    }*/
 });
